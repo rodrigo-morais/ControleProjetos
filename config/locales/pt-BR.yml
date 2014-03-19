@@ -1,0 +1,66 @@
+# encoding: utf-8
+
+pt-BR:
+  user_sessions:
+    new:
+      title: Login
+      submit: Fazer Login
+  clients:
+    index:
+      edit: Editar
+      destroy: Excluir
+      add: Inserir Novo Cliente
+      title: Clientes
+      users: Usuários
+    new:
+      title: Inserir Novo Cliente
+    edit:
+      title: Editar Cliente
+    form:
+      submit: Salvar
+      back: Voltar
+    users:
+      index:
+        edit: Editar
+        destroy: Excluir
+        title: Usuários do cliente
+        add: Inserir Novo Usuário
+      form:
+        submit: Salvar
+        back: Voltar
+  activerecord:
+    models:
+      client: Client
+    attributes:
+      client:
+        name: Nome
+        address: Endereço
+        number: Número
+        complement: Complemento
+        ddd: DDD
+        phone: Telefone
+        time_value: Valor/Hora
+        time_value_string: Valor/Hora
+      user:
+        full_name: Nome
+        email: E-mail
+        password: Senha
+        password_confirmation: Confirmar Senha
+  activemodel:
+    attributes:
+      user_session:
+        email: E-mail
+        password: Senha
+    errors:
+      messages:
+        invalid_login: 'E-mail ou senha inválidos'
+  helpers:
+    submit:
+      client:
+        create: 'Cadastrar Cliente'
+  flash:
+    alert:
+      error_login: "E-mail ou senha inválidos"
+
+  dialogs:
+    destroy: 'Confirma a exclusão do cliente?'

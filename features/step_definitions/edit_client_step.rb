@@ -1,0 +1,20 @@
+# encoding: utf-8
+
+World(FactoryGirl::Syntax::Methods)
+
+Quando /^clico no link "Editar" do cliente "([^\"]*)"$/ do |client|
+  @editClientPage = EditClientPage.new(Capybara.current_session)
+  @editClientPage.click_link_edit_client(client)
+end
+
+E /^clico no botão "([^\"]*)" para alterar o cliente$/ do |button|
+  @editClientPage.click_save button
+end
+
+E /^encontro o cliente com o novo nome "([^\"]*)"$/ do |client|
+  @editClientPage.find(client).should be_true
+end
+
+Entao /^é exibida a mensagem "([^\"]*)"$/ do |error_message|
+  @editClientPage.find_error(error_message).should be_true
+end

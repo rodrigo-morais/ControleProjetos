@@ -1,0 +1,13 @@
+<section>
+  <h1><%= t('.title') + ' ' + @presenter.client.name  %></h1>
+  <%= link_to t('.add'), new_client_user_path, id: "new_user", :class => 'newUser' %>
+  <ul id="list_users">
+    <% @presenter.users.each do |user| %>
+      <li>
+        <span><%= user.full_name %></span>
+        <%= link_to t('.destroy'), client_user_path(@presenter.client, user), method: :delete, data: {confirm: t('dialogs.destroy')} %>
+        <%= link_to t('.edit'), edit_client_user_path(user), :id => "edit_#{@presenter.client.id}_#{user.id}" %>
+      </li>
+    <% end %>
+  </ul>
+</section>

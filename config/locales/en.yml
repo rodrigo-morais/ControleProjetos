@@ -1,0 +1,9 @@
+en:
+  hello: "Hello world"
+  activerecord:
+    models:
+      client: Client
+    attributes:
+      client:
+        email: e-mail
+        password: Password

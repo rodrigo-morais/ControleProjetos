@@ -1,0 +1,9 @@
+<section>
+  <h1><%= t('.title') + ' ' + @presenter.client.name  %></h1>
+  <ul id="list_users">
+    <% @presenter.users.each do |user| %>
+      <li><%= user.full_name %></li>
+      <%=
+    <% end %>
+  </ul>
+</section>

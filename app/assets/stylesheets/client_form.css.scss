@@ -1,0 +1,70 @@
+main {
+  & section {
+    & form {
+      position: relative;
+      float: left;
+      min-width: 60%;
+      width: 60%;
+      margin: 3% 0 0 15%;
+      border: solid 2px #000000;
+      & div {
+        border: none;
+      }
+      & div.control-group {
+        margin: 2% 0 0 10%;
+      }
+      & div.left, div.right {
+        position: relative;
+        display: inline-block;
+        width: 45%;
+        & label {
+          position: relative;
+          float: left;
+          clear: both;
+        }
+        & div.controls {
+          position: relative;
+          float: left;
+          clear: both;
+        }
+      }
+      & input[type='text'] {
+        width: 80%;
+      }
+      & input[type='number'] {
+        width: 55%;
+      }
+      & input[type='number']#client_ddd {
+        width: 35%;
+      }
+      & input.complement {
+        width: 81%;
+      }
+      & input[type='tel'] {
+        width: 81%;
+      }
+      & input#client_time_value_string {
+        width: 23%;
+      }
+      & input[type='submit'], a.back {
+        margin: 5% 0 5% 20%;
+        position: relative;
+        float: left;
+        text-decoration: none;
+        border: solid 1px #000000;
+        padding: 0.025%;
+        font-size: 1em;
+        text-align: center;
+        color: #ffffff;
+        background-color: #696969;
+        width: 50%;
+        cursor: pointer;
+      }
+      & input[type='submit']:hover, a.back:hover {
+        color: #696969;
+        background-color: #ffffff;
+        cursor: pointer;
+      }
+    }
+  }
+}

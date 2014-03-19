@@ -1,0 +1,4 @@
+<span>Controle de Projetos</span>
+<ul>
+  <li><%= link_to "Clientes", clients_path, id: "clients" %></li>
+</ul>

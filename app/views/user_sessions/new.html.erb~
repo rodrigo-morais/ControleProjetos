@@ -1,0 +1,23 @@
+<div id="login">
+  <h1><%= t '.title'  %></h1>
+  <%= form_for @user_session do |f| %>
+    <div class="control-group">
+      <%= f.label :email, class: 'control-label' %>
+      <div class="controls">
+        <%= f.email_field :email, :autofocus %>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= f.label :password, class: 'control-label' %>
+      <div class="controls">
+        <%= f.password_field :password %>
+      </div>
+    </div>
+    <div class="control-group controls">
+      <%= f.submit t '.submit', class: 'btn btn-primary' %>
+    </div>
+  <% end %>
+  <% if flash[:alert] %>
+    <p class="alert"><%= alert %></p>
+  <% end %>
+</div>

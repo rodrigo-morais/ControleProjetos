@@ -1,0 +1,67 @@
+main {
+  & section {
+    & div {
+      & a {
+        width: 20%;
+        clear: right;
+        margin: 1.5% 7% 1.5% 0;
+        padding: 0.25%;
+      }
+    }
+    & a {
+      position: relative;
+      float: right;
+      text-decoration: none;
+      border: solid 1px #000000;
+      padding: 0.025%;
+      font-size: 0.68em;
+      text-align: center;
+      color: #ffffff;
+      background-color: #696969;
+    }
+    & a:hover {
+      color: #696969;
+      background-color: #ffffff;
+    }
+    & ul#list_clients {
+      position: relative;
+      float: left;
+      clear: both;
+      display: block;
+      margin: 2% 0 0 10%;
+      padding-left: 0;
+      width: 85%;
+      min-width: 85%;
+      font-size: 1em;
+      & li {
+        position: relative;
+        float: left;
+        clear: both;
+        padding-top: 1%;
+        list-style-type: none;
+        min-width: 90%;
+        width: 90%;
+        line-height: 1.7em;
+        margin-left: 0;
+        border-bottom: dashed 1px #000000;
+        & span {
+          position: relative;
+          float: left;
+          display: inline-block;
+          min-width: 50%;
+          width: 50%;
+          margin-left: 2%;
+        }
+        & a {
+          min-width: 10%;
+          width: 15%;
+          margin-right: 4%;
+          margin-bottom: 1%;
+        }
+      }
+      & li:nth-child(odd) {
+        background-color: #CCC;
+      }
+    }
+  }
+}

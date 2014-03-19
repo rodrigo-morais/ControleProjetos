@@ -1,0 +1,145 @@
+html { 
+  height: 100%;
+  background-color: #F5F5F5;
+  & body {
+    margin: 0;
+    min-height: 100%;
+    height: 100%;
+    width: 100%;
+    & header {
+      background-color: #CDC9A5;
+      margin: 0;
+      width: 100%;
+      min-height: 102px;
+      height: 15%;
+      padding: 0;
+      & span {
+        margin: 2% 0 0 1%;
+        font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+        font-size: 2.625em; /* 42px/16px = 2.625em */
+        color: #F5F5F5;
+        display: inline-block;
+        float: left;
+        width: 30%;
+        height: 70%;
+      }
+      & ul {
+        position: relative;
+        display: inline-block;
+        clear: none;
+        width: 65%;
+        height: 70%;
+        margin-top: 3%;
+        & li {
+          position: relative;
+          display: block;
+          float: left;
+          clear: none;
+          width: 20%;
+          & a {
+            text-decoration: none;
+            font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+            font-size: 1.25em; /* 20px/16px = 1.25em */
+            color: #000000;
+          }
+        }
+      }
+    }
+    & main {
+      position: relative;
+      float: left;
+      clear: both;
+      width: 100%;
+      height: 80%;
+      font-size: 1.25em; /* 20px/16px = 1.25em */
+      margin: 0;
+      & section {
+        position: relative;
+        float: left;
+        clear: both;
+        display: block;
+        width: 80%;
+        margin: 0 10% 0 10%;
+        min-height: 30%;
+        height: 70%;
+        padding-top: 2%;
+        & div.title {
+          position: relative;
+          float: left;
+          clear: both;
+          margin: 0;
+          width: 100%;
+          min-height: 52px;
+          height: 12%;
+          border-bottom: solid 2px #000000;
+          & h1 { 
+            margin: 1% 0 1% 3%;
+            font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+            font-size: 1.5em; /* 30px/20px = 1.5em */
+            position: relative;
+            float: left;
+            clear: left;
+            display: inline;
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    & body {
+      & header {
+        min-height: 78px;
+        & span {
+          font-size: 1.75em; /* 28px/16px = 1.75em */
+        }
+        & ul {
+          & li {
+            & a {
+              font-size: 1.125em; /* 18px/16px = 1.125em */
+            }
+          }
+        }
+      }
+      & main {
+        font-size: 1.125em; /* 18px/16px = 1.125em */
+        & section {
+          & div.title {
+            min-height: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  html {
+    & body {
+      & header {
+        min-height: 60px;
+        & span {
+          font-size: 1.375em; /* 22px/16px = 1.375em */
+        }
+        & ul {
+          & li {
+            & a {
+              font-size: 1em; /* 16px/16px = 1em */
+            }
+          }
+        }
+      }
+      & main {
+        font-size: 1em; /* 16px/16px = 1.25em */
+        & section {
+          & div.title {
+            min-height: 34px;
+          }
+        }
+      }
+    }
+  }
+}

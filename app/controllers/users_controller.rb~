@@ -1,0 +1,19 @@
+class UsersController < ApplicationController
+
+  def index
+    client = Client.find(params[:client_id])
+    @presenter = Users::IndexPresenter.new(client)
+  end
+
+  def new
+    @user = client.users.build
+  end
+
+  def destroy
+    @user = User.find(params[:id])
+    @user.destroy
+
+    redirect_to client_users_url(params[:client_id])
+  end
+
+end

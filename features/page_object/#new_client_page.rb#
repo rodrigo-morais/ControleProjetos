@@ -1,0 +1,26 @@
+# encoding: utf-8
+require 'capybara/rails'
+
+class NewClientPage
+
+  def initialize(session)
+    @session = session
+  end
+
+  def click_link_new_client
+    @session.click_link('Cadastro de Cliente')
+  end
+
+  def fill_field(field, value)
+    @session.fill_in(field, :with => value, :match => :prefer_exact)
+  end
+
+  def click_save(button)
+    @session.click_button(button)
+  end
+
+  def find(client)
+    @session.find('a') == client
+  end
+
+end

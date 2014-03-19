@@ -1,0 +1,4 @@
+class AddClientIdToUsers < ActiveRecord::Migration
+  def change
+  end
+end

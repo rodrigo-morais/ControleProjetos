@@ -1,0 +1,3 @@
+  def click_link(link, user)
+    @session.find_by_id("list_users").first("li span", :text => user).first(:xpath,".//..").find("a", :text => link).click
+  end

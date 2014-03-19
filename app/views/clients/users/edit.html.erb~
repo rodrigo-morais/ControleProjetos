@@ -1,0 +1,6 @@
+<section>
+  <div class="title">
+    <h1><%= t '.title' %></h1>
+  </div>
+  <%= render 'form', :url => client_user_path(@user, @user.client).to_s, :method => :patch %>
+</section>
