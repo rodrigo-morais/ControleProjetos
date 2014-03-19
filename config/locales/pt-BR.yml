@@ -61,6 +61,9 @@ pt-BR:
   flash:
     alert:
       error_login: "E-mail ou senha inválidos"
+      needs_login: "Você precisa estar logado para continuar"
+    notice:
+      already_logged_in: 'Você já está logado.'
 
   dialogs:
     destroy: 'Confirma a exclusão do cliente?'

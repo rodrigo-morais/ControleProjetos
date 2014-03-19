@@ -1,4 +1,6 @@
 class ClientsController < ApplicationController
+  before_action :require_authentication
+
   def index
     @clients = Client.all
   end
