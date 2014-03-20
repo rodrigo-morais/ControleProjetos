@@ -9,14 +9,16 @@ Funcionalidade: Cadastro de cliente
   Cenário: Navegar para a página de cadastro de cliente
     Usuário com perfil de administrador navega para a página de cadastro de cliente.
 
-    Dado que estou na página de clientes do sistema
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que estou na página de clientes do sistema
     Quando clico no link "Inserir Novo Cliente"
     Entao sou direcionado para a página de cadastro de cliente
 
   Cenário: Cadastrar um novo cliente com sucesso
     Usuário com perfil de administrador cadastra um novo cliente no sistema.
 
-    Dado que estou na página de clientes do sistema
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que estou na página de clientes do sistema
     Quando clico no link "Inserir Novo Cliente"
     E sou direcionado para a página de cadastro de cliente
     E preencho o campo "Nome" com o valor "Cliente" para o cliente a ser cadastrado
@@ -32,7 +34,8 @@ Funcionalidade: Cadastro de cliente
   Cenário: Cadastrar um novo cliente sem sucesso porque já existe cliente cadastrado com o mesmo nome
     Usuário com perfil de administrador não tem sucesso ao cadastra um novo cliente no sistema com o nome repetido.
 
-    Dado que estou na página de clientes do sistema
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que estou na página de clientes do sistema
     Quando clico no link "Inserir Novo Cliente"
     E sou direcionado para a página de cadastro de cliente
     E cadastro um cliente com o nome repetido
@@ -49,7 +52,8 @@ Funcionalidade: Cadastro de cliente
   Cenário: Cadastrar um novo cliente com sucesso quando o Valor/Hora é decimal
     Usuário com perfil de administrador cadastra um novo cliente no sistema.
 
-    Dado que estou na página de clientes do sistema
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que estou na página de clientes do sistema
     Quando clico no link "Inserir Novo Cliente"
     E sou direcionado para a página de cadastro de cliente
     E preencho o campo "Nome" com o valor "Cliente" para o cliente a ser cadastrado
@@ -65,7 +69,8 @@ Funcionalidade: Cadastro de cliente
   Cenário: Cadastrar um novo cliente sem sucesso quando o Nome esta em branco
     Usuário com perfil de administrador cadastra um novo cliente no sistema e recebe uma mensagem de erro no preenchimento dos campos
 
-    Dado que estou na página de clientes do sistema
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que estou na página de clientes do sistema
     Quando clico no link "Inserir Novo Cliente"
     E sou direcionado para a página de cadastro de cliente
     E preencho o campo "Nome" com o valor "" para o cliente a ser cadastrado
@@ -81,7 +86,8 @@ Funcionalidade: Cadastro de cliente
   Cenário: Cadastrar um novo cliente sem sucesso quando o Nome possui menos de 5 caracteres
     Usuário com perfil de administrador cadastra um novo cliente no sistema e recebe uma mensagem de erro no preenchimento dos campos.
 
-    Dado que estou na página de clientes do sistema
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que estou na página de clientes do sistema
     Quando clico no link "Inserir Novo Cliente"
     E sou direcionado para a página de cadastro de cliente
     E preencho o campo "Nome" com o valor "1234" para o cliente a ser cadastrado
@@ -97,7 +103,8 @@ Funcionalidade: Cadastro de cliente
   Cenário: Cadastrar um novo cliente sem sucesso quando o Nome possui mais de 40 caracteres
     Usuário com perfil de administrador cadastra um novo cliente no sistema e recebe uma mensagem de erro no preenchimento dos campos.
 
-    Dado que estou na página de clientes do sistema
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que estou na página de clientes do sistema
     Quando clico no link "Inserir Novo Cliente"
     E sou direcionado para a página de cadastro de cliente
     E preencho o campo "Nome" com o valor "12345678901234567890123456789012345678901" para o cliente a ser cadastrado
@@ -113,7 +120,8 @@ Funcionalidade: Cadastro de cliente
   Cenário: Cadastrar um novo cliente sem sucesso quando o Endereço esta em branco
     Usuário com perfil de administrador cadastra um novo cliente no sistema e recebe uma mensagem de erro no preenchimento dos campos
 
-    Dado que estou na página de clientes do sistema
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que estou na página de clientes do sistema
     Quando clico no link "Inserir Novo Cliente"
     E sou direcionado para a página de cadastro de cliente
     E preencho o campo "Nome" com o valor "Cliente" para o cliente a ser cadastrado
@@ -129,7 +137,8 @@ Funcionalidade: Cadastro de cliente
   Cenário: Cadastrar um novo cliente sem sucesso quando o Endereço possui menos de 8 caracteres
     Usuário com perfil de administrador cadastra um novo cliente no sistema e recebe uma mensagem de erro no preenchimento dos campos.
 
-    Dado que estou na página de clientes do sistema
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que estou na página de clientes do sistema
     Quando clico no link "Inserir Novo Cliente"
     E sou direcionado para a página de cadastro de cliente
     E preencho o campo "Nome" com o valor "Cliente" para o cliente a ser cadastrado
@@ -145,7 +154,8 @@ Funcionalidade: Cadastro de cliente
   Cenário: Cadastrar um novo cliente sem sucesso quando o Endereço possui mais de 80 caracteres
     Usuário com perfil de administrador cadastra um novo cliente no sistema e recebe uma mensagem de erro no preenchimento dos campos.
 
-    Dado que estou na página de clientes do sistema
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que estou na página de clientes do sistema
     Quando clico no link "Inserir Novo Cliente"
     E sou direcionado para a página de cadastro de cliente
     E preencho o campo "Nome" com o valor "Cliente" para o cliente a ser cadastrado
@@ -161,7 +171,8 @@ Funcionalidade: Cadastro de cliente
   Cenário: Cadastrar um novo cliente sem sucesso quando o Número esta em branco
     Usuário com perfil de administrador cadastra um novo cliente no sistema e recebe uma mensagem de erro no preenchimento dos campos
 
-    Dado que estou na página de clientes do sistema
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que estou na página de clientes do sistema
     Quando clico no link "Inserir Novo Cliente"
     E sou direcionado para a página de cadastro de cliente
     E preencho o campo "Nome" com o valor "Cliente" para o cliente a ser cadastrado
@@ -177,7 +188,8 @@ Funcionalidade: Cadastro de cliente
   Cenário: Cadastrar um novo cliente sem sucesso quando o Número possui caracteres alphanuméricos
     Usuário com perfil de administrador cadastra um novo cliente no sistema e recebe uma mensagem de erro no preenchimento dos campos
 
-    Dado que estou na página de clientes do sistema
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que estou na página de clientes do sistema
     Quando clico no link "Inserir Novo Cliente"
     E sou direcionado para a página de cadastro de cliente
     E preencho o campo "Nome" com o valor "Cliente" para o cliente a ser cadastrado
@@ -193,7 +205,8 @@ Funcionalidade: Cadastro de cliente
   Cenário: Cadastrar um novo cliente sem sucesso quando o Número possui valor inteiro negativo
     Usuário com perfil de administrador cadastra um novo cliente no sistema e recebe uma mensagem de erro no preenchimento dos campos
 
-    Dado que estou na página de clientes do sistema
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que estou na página de clientes do sistema
     Quando clico no link "Inserir Novo Cliente"
     E sou direcionado para a página de cadastro de cliente
     E preencho o campo "Nome" com o valor "Cliente" para o cliente a ser cadastrado
@@ -209,7 +222,8 @@ Funcionalidade: Cadastro de cliente
   Cenário: Cadastrar um novo cliente sem sucesso quando o Complemento esta em branco
     Usuário com perfil de administrador cadastra um novo cliente no sistema e recebe uma mensagem de erro no preenchimento dos campos
 
-    Dado que estou na página de clientes do sistema
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que estou na página de clientes do sistema
     Quando clico no link "Inserir Novo Cliente"
     E sou direcionado para a página de cadastro de cliente
     E preencho o campo "Nome" com o valor "Cliente" para o cliente a ser cadastrado
@@ -225,7 +239,8 @@ Funcionalidade: Cadastro de cliente
   Cenário: Cadastrar um novo cliente sem sucesso quando o DDD esta em branco
     Usuário com perfil de administrador cadastra um novo cliente no sistema e recebe uma mensagem de erro no preenchimento dos campos
 
-    Dado que estou na página de clientes do sistema
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que estou na página de clientes do sistema
     Quando clico no link "Inserir Novo Cliente"
     E sou direcionado para a página de cadastro de cliente
     E preencho o campo "Nome" com o valor "Cliente" para o cliente a ser cadastrado
@@ -241,7 +256,8 @@ Funcionalidade: Cadastro de cliente
   Cenário: Cadastrar um novo cliente sem sucesso quando o DDD possui caracteres alphanuméricos
     Usuário com perfil de administrador cadastra um novo cliente no sistema e recebe uma mensagem de erro no preenchimento dos campos
 
-    Dado que estou na página de clientes do sistema
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que estou na página de clientes do sistema
     Quando clico no link "Inserir Novo Cliente"
     E sou direcionado para a página de cadastro de cliente
     E preencho o campo "Nome" com o valor "Cliente" para o cliente a ser cadastrado
@@ -257,7 +273,8 @@ Funcionalidade: Cadastro de cliente
   Cenário: Cadastrar um novo cliente sem sucesso quando o DDD possui menos de dois caracteres
     Usuário com perfil de administrador cadastra um novo cliente no sistema e recebe uma mensagem de erro no preenchimento dos campos
 
-    Dado que estou na página de clientes do sistema
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que estou na página de clientes do sistema
     Quando clico no link "Inserir Novo Cliente"
     E sou direcionado para a página de cadastro de cliente
     E preencho o campo "Nome" com o valor "Cliente" para o cliente a ser cadastrado
@@ -273,7 +290,8 @@ Funcionalidade: Cadastro de cliente
   Cenário: Cadastrar um novo cliente sem sucesso quando o DDD possui mais de dois caracteres
     Usuário com perfil de administrador cadastra um novo cliente no sistema e recebe uma mensagem de erro no preenchimento dos campos
 
-    Dado que estou na página de clientes do sistema
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que estou na página de clientes do sistema
     Quando clico no link "Inserir Novo Cliente"
     E sou direcionado para a página de cadastro de cliente
     E preencho o campo "Nome" com o valor "Cliente" para o cliente a ser cadastrado
@@ -289,7 +307,8 @@ Funcionalidade: Cadastro de cliente
   Cenário: Cadastrar um novo cliente sem sucesso quando o Telefone esta em branco
     Usuário com perfil de administrador cadastra um novo cliente no sistema e recebe uma mensagem de erro no preenchimento dos campos
 
-    Dado que estou na página de clientes do sistema
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que estou na página de clientes do sistema
     Quando clico no link "Inserir Novo Cliente"
     E sou direcionado para a página de cadastro de cliente
     E preencho o campo "Nome" com o valor "Cliente" para o cliente a ser cadastrado
@@ -305,7 +324,8 @@ Funcionalidade: Cadastro de cliente
   Cenário: Cadastrar um novo cliente sem sucesso quando o Telefone possui caracteres alphanuméricos
     Usuário com perfil de administrador cadastra um novo cliente no sistema e recebe uma mensagem de erro no preenchimento dos campos
 
-    Dado que estou na página de clientes do sistema
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que estou na página de clientes do sistema
     Quando clico no link "Inserir Novo Cliente"
     E sou direcionado para a página de cadastro de cliente
     E preencho o campo "Nome" com o valor "Cliente" para o cliente a ser cadastrado
@@ -321,7 +341,8 @@ Funcionalidade: Cadastro de cliente
   Cenário: Cadastrar um novo cliente sem sucesso quando o Telefone possui menos de 8 caracteres
     Usuário com perfil de administrador cadastra um novo cliente no sistema e recebe uma mensagem de erro no preenchimento dos campos
 
-    Dado que estou na página de clientes do sistema
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que estou na página de clientes do sistema
     Quando clico no link "Inserir Novo Cliente"
     E sou direcionado para a página de cadastro de cliente
     E preencho o campo "Nome" com o valor "Cliente" para o cliente a ser cadastrado
@@ -337,7 +358,8 @@ Funcionalidade: Cadastro de cliente
   Cenário: Cadastrar um novo cliente sem sucesso quando o Telefone possui mais de 9 caracteres
     Usuário com perfil de administrador cadastra um novo cliente no sistema e recebe uma mensagem de erro no preenchimento dos campos
 
-    Dado que estou na página de clientes do sistema
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que estou na página de clientes do sistema
     Quando clico no link "Inserir Novo Cliente"
     E sou direcionado para a página de cadastro de cliente
     E preencho o campo "Nome" com o valor "Cliente" para o cliente a ser cadastrado
@@ -353,7 +375,8 @@ Funcionalidade: Cadastro de cliente
   Cenário: Cadastrar um novo cliente sem sucesso quando o Valor/Hora esta em branco
     Usuário com perfil de administrador cadastra um novo cliente no sistema e recebe uma mensagem de erro no preenchimento dos campos
 
-    Dado que estou na página de clientes do sistema
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que estou na página de clientes do sistema
     Quando clico no link "Inserir Novo Cliente"
     E sou direcionado para a página de cadastro de cliente
     E preencho o campo "Nome" com o valor "Cliente" para o cliente a ser cadastrado
@@ -369,7 +392,8 @@ Funcionalidade: Cadastro de cliente
   Cenário: Cadastrar um novo cliente sem sucesso quando o Valor/Hora esta preenchido com caracteres alphanuméricos
     Usuário com perfil de administrador cadastra um novo cliente no sistema e recebe uma mensagem de erro no preenchimento dos campos
 
-    Dado que estou na página de clientes do sistema
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que estou na página de clientes do sistema
     Quando clico no link "Inserir Novo Cliente"
     E sou direcionado para a página de cadastro de cliente
     E preencho o campo "Nome" com o valor "Cliente" para o cliente a ser cadastrado
@@ -385,7 +409,8 @@ Funcionalidade: Cadastro de cliente
   Cenário: Cadastrar um novo cliente sem sucesso quando o Valor/Hora esta preenchido com número negativo
     Usuário com perfil de administrador cadastra um novo cliente no sistema e recebe uma mensagem de erro no preenchimento dos campos
 
-    Dado que estou na página de clientes do sistema
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que estou na página de clientes do sistema
     Quando clico no link "Inserir Novo Cliente"
     E sou direcionado para a página de cadastro de cliente
     E preencho o campo "Nome" com o valor "Cliente" para o cliente a ser cadastrado

@@ -24,7 +24,7 @@ module NavigationHelpers
     when /página de cadastro de usuário com erros/
       new_client_user_path(2)
     when /página de edição de usuário/
-      edit_client_user_path(2, 11)
+      edit_client_user_path(2, 12)
     else
       raise "Can't find mapping from \"#{page_name}\" to a path.\n" +
       "Now, go and add a mapping in features/support/paths.rb"

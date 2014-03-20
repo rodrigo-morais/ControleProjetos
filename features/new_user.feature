@@ -9,7 +9,8 @@ Funcionalidade: Cadastro de usuário
   Cenário: Navegar para a página de cadastro de usuário
     Usuário com perfil de administrador navega para a página de cadastro de usuário.
 
-    Dado que existem clientes cadastrados
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que existem clientes cadastrados
     E que estou na página de clientes do sistema
     Quando clico no link "Usuários" para o cliente "Cliente2"
     E sou direcionado para a página de usuários
@@ -19,7 +20,8 @@ Funcionalidade: Cadastro de usuário
   Cenário: Cadastrar um novo usuário com sucesso
     Usuário com perfil de administrador cadastra um novo usuário no sistema para um cliente específico.
 
-    Dado que existem clientes cadastrados
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que existem clientes cadastrados
     E que estou na página de clientes do sistema
     Quando clico no link "Usuários" para o cliente "Cliente2"
     E sou direcionado para a página de usuários
@@ -35,7 +37,8 @@ Funcionalidade: Cadastro de usuário
   Cenário: Cadastrar um novo usuário sem sucesso porque já existe usuário cadastrado com o mesmo nome
     Usuário com perfil de administrador não tem sucesso ao cadastrar um novo usuário no sistema com o nome repetido.
 
-    Dado que existem clientes cadastrados
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que existem clientes cadastrados
     E que estou na página de clientes do sistema
     Quando clico no link "Usuários" para o cliente "Cliente2"
     E que existem usuários cadastrados
@@ -52,7 +55,8 @@ Funcionalidade: Cadastro de usuário
   Cenário: Cadastrar um novo usuário sem sucesso quando o Nome esta em branco
     Usuário com perfil de administrador cadastra um novo usuário no sistema e recebe uma mensagem de erro no preenchimento dos campos
 
-    Dado que existem clientes cadastrados
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que existem clientes cadastrados
     E que estou na página de clientes do sistema
     Quando clico no link "Usuários" para o cliente "Cliente2"
     E que existem usuários cadastrados
@@ -69,7 +73,8 @@ Funcionalidade: Cadastro de usuário
   Cenário: Cadastrar um novo usuário sem sucesso quando o e-mail esta em formato errado
     Usuário com perfil de administrador cadastra um novo usuário no sistema e recebe uma mensagem de erro no preenchimento dos campos
 
-    Dado que existem clientes cadastrados
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que existem clientes cadastrados
     E que estou na página de clientes do sistema
     Quando clico no link "Usuários" para o cliente "Cliente2"
     E que existem usuários cadastrados
@@ -86,7 +91,8 @@ Funcionalidade: Cadastro de usuário
   Cenário: Cadastrar um novo usuário sem sucesso quando o e-mail já esta em uso
     Usuário com perfil de administrador cadastra um novo usuário no sistema e recebe uma mensagem de erro no preenchimento dos campos
 
-    Dado que existem clientes cadastrados
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que existem clientes cadastrados
     E que estou na página de clientes do sistema
     Quando clico no link "Usuários" para o cliente "Cliente2"
     E que existem usuários cadastrados
@@ -103,7 +109,8 @@ Funcionalidade: Cadastro de usuário
   Cenário: Cadastrar um novo usuário sem sucesso quando a Senha esta em branco
     Usuário com perfil de administrador cadastra um novo usuário no sistema e recebe uma mensagem de erro no preenchimento dos campos
 
-    Dado que existem clientes cadastrados
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que existem clientes cadastrados
     E que estou na página de clientes do sistema
     Quando clico no link "Usuários" para o cliente "Cliente2"
     E que existem usuários cadastrados
@@ -120,7 +127,8 @@ Funcionalidade: Cadastro de usuário
   Cenário: Cadastrar um novo usuário sem sucesso quando a Senha possuí em menos de 6 caracteres
     Usuário com perfil de administrador cadastra um novo usuário no sistema e recebe uma mensagem de erro no preenchimento dos campos
 
-    Dado que existem clientes cadastrados
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que existem clientes cadastrados
     E que estou na página de clientes do sistema
     Quando clico no link "Usuários" para o cliente "Cliente2"
     E que existem usuários cadastrados
@@ -137,7 +145,8 @@ Funcionalidade: Cadastro de usuário
   Cenário: Cadastrar um novo usuário sem sucesso quando a Senha possuí em mais de 8 caracteres
     Usuário com perfil de administrador cadastra um novo usuário no sistema e recebe uma mensagem de erro no preenchimento dos campos
 
-    Dado que existem clientes cadastrados
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que existem clientes cadastrados
     E que estou na página de clientes do sistema
     Quando clico no link "Usuários" para o cliente "Cliente2"
     E que existem usuários cadastrados
@@ -154,7 +163,8 @@ Funcionalidade: Cadastro de usuário
   Cenário: Cadastrar um novo usuário sem sucesso quando a Senha fora do padrão
     Usuário com perfil de administrador cadastra um novo usuário no sistema e recebe uma mensagem de erro no preenchimento dos campos
 
-    Dado que existem clientes cadastrados
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que existem clientes cadastrados
     E que estou na página de clientes do sistema
     Quando clico no link "Usuários" para o cliente "Cliente2"
     E que existem usuários cadastrados
@@ -171,7 +181,8 @@ Funcionalidade: Cadastro de usuário
   Cenário: Cadastrar um novo usuário sem sucesso quando a Confirmar Senha esta em branco
     Usuário com perfil de administrador cadastra um novo usuário no sistema e recebe uma mensagem de erro no preenchimento dos campos
 
-    Dado que existem clientes cadastrados
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que existem clientes cadastrados
     E que estou na página de clientes do sistema
     Quando clico no link "Usuários" para o cliente "Cliente2"
     E que existem usuários cadastrados
@@ -188,7 +199,8 @@ Funcionalidade: Cadastro de usuário
   Cenário: Cadastrar um novo usuário sem sucesso quando a confirmação da Senha não esta em brancocorreta
     Usuário com perfil de administrador cadastra um novo usuário no sistema e recebe uma mensagem de erro no preenchimento dos campos
 
-    Dado que existem clientes cadastrados
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que existem clientes cadastrados
     E que estou na página de clientes do sistema
     Quando clico no link "Usuários" para o cliente "Cliente2"
     E que existem usuários cadastrados

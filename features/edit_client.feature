@@ -8,7 +8,8 @@ Funcionalidade: Editar dados de cliente cadastrado
   Cenário: Navegar para a página de edição dos dados do cliente
     Usuário com perfil de administrador navega para a página edição de dados do cliente.
 
-    Dado que existe cliente cadastrados
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que existe cliente cadastrados
     E que estou na página de clientes do sistema
     Quando clico no link "Editar" do cliente "Cliente"
     Entao sou direcionado para a página de edição de cliente do sistema
@@ -16,7 +17,8 @@ Funcionalidade: Editar dados de cliente cadastrado
   Cenário: Navegar para a página de edição dos dados do cliente e verificar se os campos foram preenchidos
     Usuário com perfil de administrador navega para a página edição de dados do cliente e verifica preenchimento dos campos.
 
-    Dado que existe cliente cadastrados
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que existe cliente cadastrados
     E que estou na página de clientes do sistema
     Quando clico no link "Editar" do cliente "Cliente"
     Entao sou direcionado para a página de edição de cliente do sistema
@@ -31,7 +33,8 @@ Funcionalidade: Editar dados de cliente cadastrado
   Cenário: Editar nome do cliente
     Usuário com perfil de administrador navega para a página edição de dados do cliente e verifica preenchimento dos campos e altera o nome do mesmo.
 
-    Dado que existe cliente cadastrados
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que existe cliente cadastrados
     E que estou na página de clientes do sistema
     Quando clico no link "Editar" do cliente "Cliente"
     E sou direcionado para a página de edição de cliente do sistema
@@ -43,7 +46,8 @@ Funcionalidade: Editar dados de cliente cadastrado
   Cenário: Editar um novo cliente sem sucesso quando o Nome esta em branco
     Usuário com perfil de administrador edita cliente no sistema e recebe uma mensagem de erro no preenchimento dos campos
 
-    Dado que existe cliente cadastrados
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que existe cliente cadastrados
     E que estou na página de clientes do sistema
     Quando clico no link "Editar" do cliente "Cliente"
     E sou direcionado para a página de edição de cliente do sistema
@@ -54,7 +58,8 @@ Funcionalidade: Editar dados de cliente cadastrado
   Cenário: Editar cliente sem sucesso quando o Nome possui menos de 5 caracteres
     Usuário com perfil de administrador edita cliente no sistema e recebe uma mensagem de erro no preenchimento dos campos.
 
-    Dado que existe cliente cadastrados
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que existe cliente cadastrados
     E que estou na página de clientes do sistema
     Quando clico no link "Editar" do cliente "Cliente"
     E sou direcionado para a página de edição de cliente do sistema
@@ -65,7 +70,8 @@ Funcionalidade: Editar dados de cliente cadastrado
   Cenário: Editar cliente sem sucesso quando o Endereço esta em branco
     Usuário com perfil de administrador edita cliente no sistema e recebe uma mensagem de erro no preenchimento dos campos
 
-    Dado que existe cliente cadastrados
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que existe cliente cadastrados
     E que estou na página de clientes do sistema
     Quando clico no link "Editar" do cliente "Cliente"
     E sou direcionado para a página de edição de cliente do sistema
@@ -76,7 +82,8 @@ Funcionalidade: Editar dados de cliente cadastrado
   Cenário: Editar cliente sem sucesso quando o Endereço possui menos de 8 caracteres
     Usuário com perfil de administrador edita cliente no sistema e recebe uma mensagem de erro no preenchimento dos campos.
 
-    Dado que existe cliente cadastrados
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que existe cliente cadastrados
     E que estou na página de clientes do sistema
     Quando clico no link "Editar" do cliente "Cliente"
     E sou direcionado para a página de edição de cliente do sistema
@@ -87,7 +94,8 @@ Funcionalidade: Editar dados de cliente cadastrado
   Cenário: Editar cliente sem sucesso quando o Endereço possui mais de 80 caracteres
     Usuário com perfil de administrador edita cliente no sistema e recebe uma mensagem de erro no preenchimento dos campos.
 
-    Dado que existe cliente cadastrados
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que existe cliente cadastrados
     E que estou na página de clientes do sistema
     Quando clico no link "Editar" do cliente "Cliente"
     E sou direcionado para a página de edição de cliente do sistema
@@ -98,7 +106,8 @@ Funcionalidade: Editar dados de cliente cadastrado
   Cenário: Editar cliente sem sucesso quando o Número esta em branco
     Usuário com perfil de administrador edita cliente no sistema e recebe uma mensagem de erro no preenchimento dos campos
 
-    Dado que existe cliente cadastrados
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que existe cliente cadastrados
     E que estou na página de clientes do sistema
     Quando clico no link "Editar" do cliente "Cliente"
     E sou direcionado para a página de edição de cliente do sistema
@@ -109,7 +118,8 @@ Funcionalidade: Editar dados de cliente cadastrado
   Cenário: Editar cliente sem sucesso quando o Número possui caracteres alphanuméricos
     Usuário com perfil de administrador edita cliente no sistema e recebe uma mensagem de erro no preenchimento dos campos
 
-    Dado que existe cliente cadastrados
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que existe cliente cadastrados
     E que estou na página de clientes do sistema
     Quando clico no link "Editar" do cliente "Cliente"
     E sou direcionado para a página de edição de cliente do sistema
@@ -120,7 +130,8 @@ Funcionalidade: Editar dados de cliente cadastrado
   Cenário: Editar cliente sem sucesso quando o Número possui valor inteiro negativo
     Usuário com perfil de administrador edita cliente no sistema e recebe uma mensagem de erro no preenchimento dos campos
 
-    Dado que existe cliente cadastrados
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que existe cliente cadastrados
     E que estou na página de clientes do sistema
     Quando clico no link "Editar" do cliente "Cliente"
     E sou direcionado para a página de edição de cliente do sistema
@@ -131,7 +142,8 @@ Funcionalidade: Editar dados de cliente cadastrado
   Cenário: Editar cliente sem sucesso quando o Complemento esta em branco
     Usuário com perfil de administrador edita cliente no sistema e recebe uma mensagem de erro no preenchimento dos campos
 
-    Dado que existe cliente cadastrados
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que existe cliente cadastrados
     E que estou na página de clientes do sistema
     Quando clico no link "Editar" do cliente "Cliente"
     E sou direcionado para a página de edição de cliente do sistema
@@ -142,7 +154,8 @@ Funcionalidade: Editar dados de cliente cadastrado
   Cenário: Editar cliente sem sucesso quando o DDD esta em branco
     Usuário com perfil de administrador edita cliente no sistema e recebe uma mensagem de erro no preenchimento dos campos
 
-    Dado que existe cliente cadastrados
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que existe cliente cadastrados
     E que estou na página de clientes do sistema
     Quando clico no link "Editar" do cliente "Cliente"
     E sou direcionado para a página de edição de cliente do sistema
@@ -153,7 +166,8 @@ Funcionalidade: Editar dados de cliente cadastrado
   Cenário: Editar cliente sem sucesso quando o DDD possui caracteres alphanuméricos
     Usuário com perfil de administrador editar cliente no sistema e recebe uma mensagem de erro no preenchimento dos campos
 
-    Dado que existe cliente cadastrados
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que existe cliente cadastrados
     E que estou na página de clientes do sistema
     Quando clico no link "Editar" do cliente "Cliente"
     E sou direcionado para a página de edição de cliente do sistema
@@ -164,7 +178,8 @@ Funcionalidade: Editar dados de cliente cadastrado
   Cenário: Editar um novo cliente sem sucesso quando o DDD possui menos de dois caracteres
     Usuário com perfil de administrador edita cliente no sistema e recebe uma mensagem de erro no preenchimento dos campos
 
-    Dado que existe cliente cadastrados
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que existe cliente cadastrados
     E que estou na página de clientes do sistema
     Quando clico no link "Editar" do cliente "Cliente"
     E sou direcionado para a página de edição de cliente do sistema
@@ -175,7 +190,8 @@ Funcionalidade: Editar dados de cliente cadastrado
   Cenário: Editar cliente sem sucesso quando o DDD possui mais de dois caracteres
     Usuário com perfil de administrador edita cliente no sistema e recebe uma mensagem de erro no preenchimento dos campos
 
-    Dado que existe cliente cadastrados
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que existe cliente cadastrados
     E que estou na página de clientes do sistema
     Quando clico no link "Editar" do cliente "Cliente"
     E sou direcionado para a página de edição de cliente do sistema
@@ -186,7 +202,8 @@ Funcionalidade: Editar dados de cliente cadastrado
   Cenário: Editar cliente sem sucesso quando o Telefone esta em branco
     Usuário com perfil de administrador edita cliente no sistema e recebe uma mensagem de erro no preenchimento dos campos
 
-    Dado que existe cliente cadastrados
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que existe cliente cadastrados
     E que estou na página de clientes do sistema
     Quando clico no link "Editar" do cliente "Cliente"
     E sou direcionado para a página de edição de cliente do sistema
@@ -197,7 +214,8 @@ Funcionalidade: Editar dados de cliente cadastrado
   Cenário: Editar cliente sem sucesso quando o Telefone possui caracteres alphanuméricos
     Usuário com perfil de administrador edita cliente no sistema e recebe uma mensagem de erro no preenchimento dos campos
 
-    Dado que existe cliente cadastrados
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que existe cliente cadastrados
     E que estou na página de clientes do sistema
     Quando clico no link "Editar" do cliente "Cliente"
     E sou direcionado para a página de edição de cliente do sistema
@@ -208,7 +226,8 @@ Funcionalidade: Editar dados de cliente cadastrado
   Cenário: Editar cliente sem sucesso quando o Telefone possui menos de 8 caracteres
     Usuário com perfil de administrador edita cliente no sistema e recebe uma mensagem de erro no preenchimento dos campos
 
-    Dado que existe cliente cadastrados
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que existe cliente cadastrados
     E que estou na página de clientes do sistema
     Quando clico no link "Editar" do cliente "Cliente"
     E sou direcionado para a página de edição de cliente do sistema
@@ -219,7 +238,8 @@ Funcionalidade: Editar dados de cliente cadastrado
   Cenário: Editar cliente sem sucesso quando o Telefone possui mais de 9 caracteres
     Usuário com perfil de administrador edita cliente no sistema e recebe uma mensagem de erro no preenchimento dos campos
 
-    Dado que existe cliente cadastrados
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que existe cliente cadastrados
     E que estou na página de clientes do sistema
     Quando clico no link "Editar" do cliente "Cliente"
     E sou direcionado para a página de edição de cliente do sistema
@@ -230,7 +250,8 @@ Funcionalidade: Editar dados de cliente cadastrado
   Cenário: Editar cliente sem sucesso quando o Valor/Hora esta em branco
     Usuário com perfil de administrador edita cliente no sistema e recebe uma mensagem de erro no preenchimento dos campos
 
-    Dado que existe cliente cadastrados
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que existe cliente cadastrados
     E que estou na página de clientes do sistema
     Quando clico no link "Editar" do cliente "Cliente"
     E sou direcionado para a página de edição de cliente do sistema
@@ -241,7 +262,8 @@ Funcionalidade: Editar dados de cliente cadastrado
   Cenário: Editar cliente sem sucesso quando o Valor/Hora esta preenchido com caracteres alphanuméricos
     Usuário com perfil de administrador edita cliente no sistema e recebe uma mensagem de erro no preenchimento dos campos
 
-    Dado que existe cliente cadastrados
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que existe cliente cadastrados
     E que estou na página de clientes do sistema
     Quando clico no link "Editar" do cliente "Cliente"
     E sou direcionado para a página de edição de cliente do sistema
@@ -252,7 +274,8 @@ Funcionalidade: Editar dados de cliente cadastrado
   Cenário: Editar cliente sem sucesso quando o Valor/Hora esta preenchido com número negativo
     Usuário com perfil de administrador edita cliente no sistema e recebe uma mensagem de erro no preenchimento dos campos
 
-    Dado que existe cliente cadastrados
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que existe cliente cadastrados
     E que estou na página de clientes do sistema
     Quando clico no link "Editar" do cliente "Cliente"
     E sou direcionado para a página de edição de cliente do sistema

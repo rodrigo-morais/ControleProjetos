@@ -2,6 +2,18 @@
 
 World(FactoryGirl::Syntax::Methods)
 
+Dado /^que estou logado com usuário com perfil de "([^\"]*)"$/ do |profile|
+  if profile == "administrador"
+    create(:user, :not_list_admin)
+  end
+
+  @webPage = WebPage.new(Capybara.current_session)
+  @webPage.visit path_to("página inicial")
+
+  @loginPage = LoginPage.new(Capybara.current_session)
+  @loginPage.login_in_system('morales@mail.com', '?T2014', 'Fazer Login')  
+end
+
 Quando /^informo o e-mail "([^\"]*)", a senha "([^\"]*)" e clico no botão "([^\"]*)"$/ do |email, password, button|
   create(:user, :not_list_admin)
   @loginPage = LoginPage.new(Capybara.current_session)

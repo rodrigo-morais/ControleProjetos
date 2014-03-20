@@ -8,7 +8,8 @@ Funcionalidade: Editar dados de usuário cadastrado
   Cenário: Navegar para a página de edição dos dados do usuário de um cliente em específico
     Usuário com perfil de administrador navega para a página edição de dados do usuário de um cliente em específico.
 
-    Dado que existem clientes cadastrados
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que existem clientes cadastrados
     E que estou na página de clientes do sistema
     Quando clico no link "Usuários" para o cliente "Cliente2"
     E que existem usuários cadastrados
@@ -19,7 +20,8 @@ Funcionalidade: Editar dados de usuário cadastrado
   Cenário: Navegar para a página de edição dos dados do usuário e verificar se os campos foram preenchidos
     Usuário com perfil de administrador navega para a página edição de dados do usuário e verifica preenchimento dos campos.
 
-    Dado que existem clientes cadastrados
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que existem clientes cadastrados
     E que estou na página de clientes do sistema
     Quando clico no link "Usuários" para o cliente "Cliente2"
     E que existem usuários cadastrados
@@ -32,7 +34,8 @@ Funcionalidade: Editar dados de usuário cadastrado
   Cenário: Editar o nome do usuário e confirmar a alteração
     Usuário com perfil de administrador navega para a página edição de dados do usuário e edita o nome do usuário.
 
-    Dado que existem clientes cadastrados
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que existem clientes cadastrados
     E que estou na página de clientes do sistema
     Quando clico no link "Usuários" para o cliente "Cliente2"
     E que existem usuários cadastrados
@@ -49,7 +52,8 @@ Funcionalidade: Editar dados de usuário cadastrado
   Cenário: Editar o e-mail do usuário e confirmar a alteração
     Usuário com perfil de administrador navega para a página edição de dados do usuário e edita o e-mail do usuário.
 
-    Dado que existem clientes cadastrados
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que existem clientes cadastrados
     E que estou na página de clientes do sistema
     Quando clico no link "Usuários" para o cliente "Cliente2"
     E que existem usuários cadastrados
@@ -68,7 +72,8 @@ Funcionalidade: Editar dados de usuário cadastrado
   Cenário: Editar os dados do usuário e confirmar a alteração
     Usuário com perfil de administrador navega para a página edição de dados do usuário e edita o nome e e-mail do usuário.
 
-    Dado que existem clientes cadastrados
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que existem clientes cadastrados
     E que estou na página de clientes do sistema
     Quando clico no link "Usuários" para o cliente "Cliente2"
     E que existem usuários cadastrados

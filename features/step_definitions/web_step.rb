@@ -1,5 +1,5 @@
 # encoding: utf-8
-Dado /^que estou na (.+) do sistema$/ do |page_name|
+E /^que estou na (.+) do sistema$/ do |page_name|
   @webPage = WebPage.new(Capybara.current_session)
   @webPage.visit path_to(page_name)
 end
