@@ -1,5 +1,6 @@
 class ClientsController < ApplicationController
   before_action :require_authentication
+  before_action :can_access?
 
   def index
     @clients = Client.all

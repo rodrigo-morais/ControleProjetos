@@ -9,7 +9,11 @@
   <body>
 
     <header>
-      <%= render 'layouts/rmm_navbar' %>
+      <% if is_admin? %>
+        <%= render 'layouts/rmm_navbar' %>
+      <% else %>
+        <%= render 'layouts/client_navbar' %>
+      <% end %>
     </header>
 
     <main>

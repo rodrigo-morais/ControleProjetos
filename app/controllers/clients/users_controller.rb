@@ -1,5 +1,6 @@
 class Clients::UsersController < ApplicationController
   before_action :require_authentication
+  before_action :can_access?
 
   def index
     @presenter = Users::IndexPresenter.new(client)

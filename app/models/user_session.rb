@@ -31,6 +31,10 @@ class UserSession
     @session[:user_id].present?
   end
 
+  def is_admin?
+    current_user.admin
+  end
+
   def destroy
     @session[:user_id] = nil
   end
