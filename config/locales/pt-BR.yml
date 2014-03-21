@@ -28,6 +28,8 @@ pt-BR:
       form:
         submit: Salvar
         back: Voltar
+  layout:
+    signout: 'Logout'
   activerecord:
     models:
       client: Client
@@ -64,6 +66,7 @@ pt-BR:
       needs_login: "Você precisa estar logado para continuar"
     notice:
       already_logged_in: 'Você já está logado.'
+      signed_out: 'Logout efetuado com sucesso!'
 
   dialogs:
     destroy: 'Confirma a exclusão do cliente?'

@@ -19,5 +19,7 @@
   <% end %>
   <% if flash[:alert] %>
     <p class="alert"><%= alert %></p>
+  <% elsif flash[:notice] %>
+    <p class="alert"><%= notice %></p>
   <% end %>
 </div>

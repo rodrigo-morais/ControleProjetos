@@ -31,3 +31,7 @@ end
 E /^é exibida a mensagem de erro "([^\"]*)"$/ do |mensagem|
   @loginPage.getErrorMessage.should == mensagem
 end
+
+E /^a menssagem "([^\"]*)" é exibida$/ do |mensagem|
+  @loginPage.getErrorMessage.should == mensagem
+end

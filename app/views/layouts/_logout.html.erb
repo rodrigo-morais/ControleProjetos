@@ -1,0 +1,4 @@
+<div>
+  <span><%= current_user.full_name %></span>
+  <%= link_to t('layout.signout'), user_session_path(current_user), method: :delete %>
+</div>

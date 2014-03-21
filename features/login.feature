@@ -19,3 +19,13 @@ Funcionalidade: Login de usuário
     Quando informo o e-mail "email@errado.com", a senha "?T2014" e clico no botão "Fazer Login"
     Entao retorno para a página de login do sistema
     E é exibida a mensagem de erro "E-mail ou senha inválidos"
+
+  Cenário: Deslogar com perfil Administrador com sucesso
+    Usuário informa seu e-mail e senha corretos e é direcionado para a página principal do sistema e clica no link Logout.
+
+    Dado que estou na página de login do sistema
+    Quando informo o e-mail "morales@mail.com", a senha "?T2014" e clico no botão "Fazer Login"
+    E sou redirecionado para a página de projetos do sistema como usuário logado
+    E clico no link "Logout"
+    Entao retorno para a página de login do sistema
+    E a menssagem "Logout efetuado com sucesso!" é exibida
