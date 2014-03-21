@@ -16,7 +16,11 @@ class LoginPage
     @error = @session.find('.alert')
 
     @error ? @error.text : ""
+  end
 
+  def getFirstMenu
+    @menu = @session.find('header ul').first('li')
+    @menu ? @menu.text : ""
   end
 
 end
