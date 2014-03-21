@@ -37,7 +37,7 @@
       <%= f.submit t '.submit', class: 'btn btn-primary' %>
     </div>
     <div class="right">
-      <%= link_to t('.back'), clients_path, :class => 'back' %>
+      <%= link_to t('.back'), client_users_path(@user.client), :class => 'back' %>
     </div>
   </div>
 <% end %>

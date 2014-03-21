@@ -72,6 +72,9 @@ html {
           content: "\f057";
           margin-left: 2%;
         }
+        & a:hover {
+          color: #FF0000;
+        }
       }
     }
     & main {
@@ -110,6 +113,46 @@ html {
             clear: left;
             display: inline;
             width: 50%;
+          }
+        }
+        & ul#list {
+          position: relative;
+          float: left;
+          clear: both;
+          display: block;
+          margin: 2% 0 0 5%;
+          padding-left: 0;
+          min-width: 80%;
+          width: 100%;
+          font-size: 1em;
+          & li {
+            position: relative;
+            float: left;
+            clear: both;
+            padding-top: 1%;
+            list-style-type: none;
+            min-width: 90%;
+            width: 90%;
+            line-height: 1.7em;
+            margin-left: 0;
+            border-bottom: dashed 1px #000000;
+            & span {
+              position: relative;
+              float: left;
+              display: inline-block;
+              min-width: 40%;
+              width: 40%;
+              margin-left: 2%;
+            }
+            & a {
+              min-width: 10%;
+              width: 10%;
+              margin-right: 4%;
+              margin-bottom: 1%;
+            }
+          }
+          & li:nth-child(odd) {
+            background-color: #CCC;
           }
         }
       }

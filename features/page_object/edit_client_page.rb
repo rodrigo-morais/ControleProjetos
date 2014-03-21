@@ -8,7 +8,7 @@ class EditClientPage
   end
 
   def click_link_edit_client(client)
-    @session.find_by_id("list_clients").find("li").find("span", :text => client).first(:xpath,".//..").find("a", :text => "Editar").click
+    @session.find_by_id("list").find("li").find("span", :text => client).first(:xpath,".//..").find("a", :text => "Editar").click
   end
 
   def click_save(button)
@@ -16,7 +16,7 @@ class EditClientPage
   end
 
   def find(client)
-    @session.find_by_id("list_clients").find("li").find("span", :text => client)
+    @session.find_by_id("list").find("li").find("span", :text => client)
   end
 
   def find_error(error_message)

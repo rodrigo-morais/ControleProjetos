@@ -4,7 +4,7 @@
     <%= link_to t('.add'), new_client_path, id: "new_client", :class => 'newClient' %>
   </div>
 
-  <ul id="list_clients">
+  <ul id="list">
     <% @clients.each do |client| %>
       <li>
         <span><%= client.name %></span>

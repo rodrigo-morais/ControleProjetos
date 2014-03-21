@@ -12,15 +12,15 @@ class ClientsPage
   end
 
   def has_clients?
-    @session.find("#list_clients").has_selector?("li")
+    @session.find("#list").has_selector?("li")
   end
 
   def quantity_clients
-    @session.find("#list_clients").has_selector?("li") ? @session.find("#list_clients").all("li").count : 0
+    @session.find("#list").has_selector?("li") ? @session.find("#list").all("li").count : 0
   end
 
   def has_delete_clients?
-    @session.find("#list_clients").all("li").each do |client|
+    @session.find("#list").all("li").each do |client|
       if !client.find('a', :text => "Excluir")
         return false
       end
@@ -29,13 +29,13 @@ class ClientsPage
   end
 
   def delete(client)
-    clientElement = @session.find("#list_clients").find('li span', :text => client)
+    clientElement = @session.find("#list").find('li span', :text => client)
     clientElement.first(:xpath,".//..").click_link("Excluir")
   end
 
   def has_client?(client)
     begin
-      @session.find("#list_clients").find('li span', :text => client)
+      @session.find("#list").find('li span', :text => client)
       true
     rescue Capybara::ElementNotFound
       false
@@ -43,7 +43,7 @@ class ClientsPage
   end
 
   def click_users_link(client)
-    clientElement = @session.find("#list_clients").find('li span', :text => client)
+    clientElement = @session.find("#list").find('li span', :text => client)
     clientElement.first(:xpath,".//..").click_link("Usuários")
   end
 

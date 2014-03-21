@@ -12,7 +12,7 @@ class NewClientPage
   end
 
   def find(client)
-    @session.find_by_id("list_clients").find("li").find("span", :text => client)
+    @session.find_by_id("list").find("li").find("span", :text => client)
   end
 
 end

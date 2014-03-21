@@ -25,6 +25,10 @@ pt-BR:
         destroy: Excluir
         title: Usuários do cliente
         add: Inserir Novo Usuário
+      new:
+        title: Inserir Novo Usuário
+      edit:
+        title: Editar Usuário
       form:
         submit: Salvar
         back: Voltar

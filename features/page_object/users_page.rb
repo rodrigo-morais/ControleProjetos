@@ -8,7 +8,7 @@ class UsersPage
   end
 
   def quantity_users
-    @session.find("#list_users").has_selector?("li") ? @session.find("#list_users").all("li").count : 0
+    @session.find("#list").has_selector?("li") ? @session.find("#list").all("li").count : 0
   end
 
   def title
@@ -16,7 +16,7 @@ class UsersPage
   end
 
   def has_delete_users?
-    @session.find("#list_users").all("li").each do |user|
+    @session.find("#list").all("li").each do |user|
       if !user.find('a', :text => "Excluir")
         return false
       end
@@ -25,12 +25,12 @@ class UsersPage
   end
 
   def click_link(link, user)
-    @session.find_by_id("list_users").first("li span", :text => user).first(:xpath,".//..").find("a", :text => link).click
+    @session.find_by_id("list").first("li span", :text => user).first(:xpath,".//..").find("a", :text => link).click
   end
 
   def has_user?(user)
     begin
-      @session.find("#list_users").find('li span', :text => user)
+      @session.find("#list").find('li span', :text => user)
       true
     rescue Capybara::ElementNotFound
       false

@@ -8,7 +8,7 @@ class EditUserPage
   end
 
   def find(user)
-    @session.find_by_id("list_users").find("li span", :text => user)
+    @session.find_by_id("list").find("li span", :text => user)
   end
 
 end

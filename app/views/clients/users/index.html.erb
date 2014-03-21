@@ -1,7 +1,9 @@
 <section>
-  <h1><%= t('.title') + ' ' + @presenter.client.name  %></h1>
-  <%= link_to t('.add'), new_client_user_path, id: "new_user", :class => 'newUser' %>
-  <ul id="list_users">
+  <div class="title">
+    <h1><%= t('.title') + ' ' + @presenter.client.name  %></h1>
+    <%= link_to t('.add'), new_client_user_path, id: "new_user", :class => 'newUser' %>
+  </div>
+  <ul id="list">
     <% @presenter.users.each do |user| %>
       <li>
         <span><%= user.full_name %></span>
