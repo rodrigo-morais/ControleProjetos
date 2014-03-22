@@ -2,8 +2,10 @@ class ClientsController < ApplicationController
   before_action :require_authentication
   before_action :can_access?
 
+  PER_PAGE = 10
+
   def index
-    @clients = Client.all
+    @clients = Client.all.page(params[:page]).per(PER_PAGE)
   end
 
   def new

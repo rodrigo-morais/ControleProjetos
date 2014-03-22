@@ -44,3 +44,15 @@ Quando /^clico no link "Usuários" para o cliente "([^\"]*)"$/ do |client|
   @clientsPage = @clientsPage || ClientsPage.new(Capybara.current_session)
   @clientsPage.click_users_link(client)
 end
+
+E /^existem duas páginas para listar os clientes$/ do
+  @clientsPage.number_pages.should == 2
+end
+
+E /^clico no link da página dois$/ do
+  @clientsPage.click_page(2)
+end
+
+E /^são exibidos (.+) clientes$/ do |qtd_clients|
+  @clientsPage.quantity_clients.should == qtd_clients.to_i
+end
