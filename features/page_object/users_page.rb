@@ -37,4 +37,12 @@ class UsersPage
     end
   end
 
+  def number_pages
+    @session.find("main section nav.pagination").all("span.page").count
+  end
+
+  def click_page(page)
+    @session.find("main section nav.pagination").find('span.page a', :text => page.to_s).click
+  end
+
 end

@@ -11,3 +11,8 @@ Entao /^sou redirecionado para a (.+) do sistema com o usuário "([^\"]*)" lista
   @newUserPage ||=  NewUserPage.new(Capybara.current_session)
   @newUserPage.find(user).should be_true
 end
+
+E /^verifico o usuário "([^\"]*)" listado$/ do |user|
+  @newUserPage ||=  NewUserPage.new(Capybara.current_session)
+  @newUserPage.find(user).should be_true
+end

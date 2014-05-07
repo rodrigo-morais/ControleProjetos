@@ -2,8 +2,10 @@ class Clients::UsersController < ApplicationController
   before_action :require_authentication
   before_action :can_access?
 
+  PER_PAGE = 10
+
   def index
-    @presenter = Users::IndexPresenter.new(client)
+    @presenter = Users::IndexPresenter.new(client, params[:page], PER_PAGE)
   end
 
   def new
@@ -26,18 +28,18 @@ class Clients::UsersController < ApplicationController
   end
 
   def destroy
-    @user = User.find(params[:id])
+    @user = User.friendly.find(params[:id])
     @user.destroy
 
     redirect_to client_users_url(params[:client_id])
   end
 
   def edit
-    @user = client.users.find(params[:id])
+    @user = client.users.friendly.find(params[:id])
   end
 
   def update
-    @user = client.users.find(params[:id])
+    @user = client.users.friendly.find(params[:id])
 
     if @user.update_attributes(user_params)
       redirect_to client_users_url(params[:client_id]), notice: t('flash.notice.user_update')
@@ -49,7 +51,7 @@ class Clients::UsersController < ApplicationController
   private
 
   def client
-    @client ||= Client.find(params[:client_id])
+    @client ||= Client.friendly.find(params[:client_id])
   end
 
   def user_params

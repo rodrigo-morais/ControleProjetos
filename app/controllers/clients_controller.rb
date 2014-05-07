@@ -23,12 +23,12 @@ class ClientsController < ApplicationController
   end
 
   def edit
-    @client = Client.find(params[:id])
+    @client = Client.friendly.find(params[:id])
     @client.time_value_string = ('%.2f' % @client.time_value).gsub('.', ',')
   end
 
   def update
-    @client = Client.find(params[:id])
+    @client = Client.friendly.find(params[:id])
 
     if @client.update(client_params)
       redirect_to clients_path, notice: t('flash.notice.client_update')
@@ -38,7 +38,7 @@ class ClientsController < ApplicationController
   end
 
   def destroy
-    @client = Client.find(params[:id])
+    @client = Client.friendly.find(params[:id])
     @client.destroy
 
     redirect_to clients_url

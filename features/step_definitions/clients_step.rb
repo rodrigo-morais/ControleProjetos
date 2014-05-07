@@ -50,6 +50,7 @@ E /^existem duas páginas para listar os clientes$/ do
 end
 
 E /^clico no link da página dois$/ do
+  @clientsPage ||=  ClientsPage.new(Capybara.current_session)
   @clientsPage.click_page(2)
 end
 

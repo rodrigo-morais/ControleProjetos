@@ -1,0 +1,5 @@
+users = ClientUser.all
+
+users.each do |user|
+  user.save!
+end

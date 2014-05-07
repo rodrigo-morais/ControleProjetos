@@ -46,3 +46,14 @@ end
 E /^altero "([^\"]*)" para o valor "([^\"]*)"$/ do |field, value|
   @webPage.change_value(field, value)
 end
+
+E /^existem clientes cadastrados, cada um com 12 usuários$/ do
+  (1..10).each do |n|
+    create(:client, :name => "Cliente#{n}")
+  end
+  Client.all.each do |client|
+    (11..12).each do |n|
+      user = create(:user, full_name: "Novo Usuario #{n}", :email => "usuario#{n}@usuario.com", client: client)
+    end
+  end
+end

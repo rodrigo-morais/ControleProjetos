@@ -1,5 +1,7 @@
 # encoding: utf-8
 class Client < ActiveRecord::Base
+  extend FriendlyId
+
   has_many :users, dependent: :destroy
 
   before_validation :format_time_value
@@ -14,6 +16,9 @@ class Client < ActiveRecord::Base
   validates :phone, presence: true, :format => { :with => /\A[0-9]{8,9}\z/, :message => "preencher com um número positivo com no mínimo 8 e no máximo 9 caracteres" }
   validates :time_value, presence: true, :numericality => {:greater_than => 0, :message => "preencher com um valor númerico e positivo" }
   validates :time_value_string, :is_float => { :attribute => "time_value", :message => "preencher com um valor númerico e positivo" }
+  validates_presence_of :slug
+
+  friendly_id :name, use: [:slugged, :history] 
 
   private
   def format_time_value

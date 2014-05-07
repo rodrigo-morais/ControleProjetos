@@ -32,7 +32,28 @@ Funcionalidade: Cadastro de usuário
     E preencho o campo "Senha" com o valor "@Usu2014" para o cliente a ser cadastrado
     E preencho o campo "Confirmar Senha" com o valor "@Usu2014" para o usuário a ser cadastrado
     E clico no botão "Salvar"
-    Entao sou redirecionado para a página de usuários do sistema com o usuário "Novo usuario cadastrar" listado
+    Entao sou direcionado para a página de usuários do sistema
+    E existem duas páginas para listar os usuários
+
+  Cenário: Cadastrar um novo usuário com sucesso e verificar o mesmo na segunda página
+    Usuário com perfil de administrador cadastra um novo usuário no sistema para um cliente específico e verifica a sua presença na segunda página.
+
+    Dado que estou logado com usuário com perfil de "administrador"
+    E que existem clientes cadastrados
+    E que estou na página de clientes do sistema
+    Quando clico no link "Usuários" para o cliente "Cliente2"
+    E sou direcionado para a página de usuários
+    E clico no link "Inserir Novo Usuário"
+    E sou direcionado para a página de cadastro de usuário
+    E preencho o campo "Nome" com o valor "Novo usuario cadastrar" para o usuário a ser cadastrado
+    E preencho o campo "E-mail" com o valor "usuario@usuario.com" para o usuário a ser cadastrado
+    E preencho o campo "Senha" com o valor "@Usu2014" para o cliente a ser cadastrado
+    E preencho o campo "Confirmar Senha" com o valor "@Usu2014" para o usuário a ser cadastrado
+    E clico no botão "Salvar"
+    E sou direcionado para a página de usuários do sistema
+    E existem duas páginas para listar os usuários
+    E clico no link da página dois
+    E verifico o usuário "Novo usuario cadastrar" listado
 
   Cenário: Cadastrar um novo usuário sem sucesso porque já existe usuário cadastrado com o mesmo nome
     Usuário com perfil de administrador não tem sucesso ao cadastrar um novo usuário no sistema com o nome repetido.
@@ -242,7 +263,28 @@ Funcionalidade: Cadastro de usuário
     E preencho o campo "Senha" com o valor "@Usu2014" para o cliente a ser cadastrado
     E preencho o campo "Confirmar Senha" com o valor "@Usu2014" para o usuário a ser cadastrado
     E clico no botão "Salvar"
-    Entao sou redirecionado para a página de usuários do sistema com o usuário "Novo usuario cadastrar" listado
+    Entao sou direcionado para a página de usuários do sistema
+    E existem duas páginas para listar os usuários
+
+  Cenário: Cadastrar um novo usuário com sucesso e verificar a sua presença na lista de usuários
+    Usuário com perfil de cliente cadastra um novo usuário no sistema e verifica se o mesmo esta listado.
+
+    Dado que existem clientes cadastrados
+    E que estou logado com usuário com perfil de "cliente"
+    E que estou na página de usuários do sistema
+    Quando clico no link "Usuários"
+    E sou direcionado para a página de usuários
+    E clico no link "Inserir Novo Usuário"
+    E sou direcionado para a página de cadastro de usuário
+    E preencho o campo "Nome" com o valor "Novo usuario cadastrar" para o usuário a ser cadastrado
+    E preencho o campo "E-mail" com o valor "usuario@usuario.com" para o usuário a ser cadastrado
+    E preencho o campo "Senha" com o valor "@Usu2014" para o cliente a ser cadastrado
+    E preencho o campo "Confirmar Senha" com o valor "@Usu2014" para o usuário a ser cadastrado
+    E clico no botão "Salvar"
+    E sou direcionado para a página de usuários do sistema
+    E existem duas páginas para listar os usuários
+    E clico no link da página dois
+    E verifico o usuário "Novo usuario cadastrar" listado
 
   Cenário: Cadastrar um novo usuário sem sucesso porque já existe usuário cadastrado com o mesmo nome
     Usuário com perfil de cliente não tem sucesso ao cadastrar um novo usuário no sistema com o nome repetido.

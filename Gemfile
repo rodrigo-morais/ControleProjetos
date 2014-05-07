@@ -35,3 +35,5 @@ gem "factory_girl_rails", "~> 4.0"
 gem 'font-awesome-rails'
 
 gem 'kaminari'
+
+gem 'friendly_id', github: 'FriendlyId/friendly_id', branch: 'master'
