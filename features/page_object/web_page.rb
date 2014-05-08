@@ -35,7 +35,7 @@ class WebPage
   end
 
   def find_error(error_message)
-    @session.find("li", :text => error_message)
+    @session.first("li", :text => error_message)
   end
 
   def change_value(field, value)

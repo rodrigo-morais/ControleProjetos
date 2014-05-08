@@ -16,15 +16,21 @@ module NavigationHelpers
     when /página de clientes/
       clients_path
     when /página de edição de cliente/
-      edit_client_path(id)
+      client = Client.friendly.find(id)
+      edit_client_path(client)
     when /página de usuários/
-      client_users_path(2)
+      client = Client.friendly.find(2)
+      client_users_path(client)
     when /página de cadastro de usuário/
-      new_client_user_path(2)
+      client = Client.friendly.find(2)
+      new_client_user_path(client)
     when /página de cadastro de usuário com erros/
-      new_client_user_path(2)
+      client = Client.friendly.find(2)
+      new_client_user_path(client)
     when /página de edição de usuário/
-      edit_client_user_path(2, 12)
+      client = Client.friendly.find(2)
+      user = User.friendly.find(12)
+      edit_client_user_path(client, user)
     else
       raise "Can't find mapping from \"#{page_name}\" to a path.\n" +
       "Now, go and add a mapping in features/support/paths.rb"
